@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: insecure-namespace
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: exposed-app
+  namespace: insecure-namespace
+spec:
+  containers:
+  - name: app-container
+    image: nginx:latest
+    resources:
+      limits:
+        cpu: "500m"
+        memory: "256Mi"
+      requests:
+        cpu: "250m"
+        memory: "128Mi"
