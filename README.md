@@ -1,6 +1,6 @@
 # Kubernetes Security Hardening Scanner
 
-A custom Python-based security scanner for Kubernetes clusters, validated against the industry-standard **kube-bench** (CIS Kubernetes Benchmark) tool. Built and tested on a live local cluster (minikube), not just static YAML analysis.
+A custom Python-based security scanner for Kubernetes clusters, validated against the industry-standard **kube-bench** (CIS Kubernetes Benchmark) tool. Built and tested on a live local cluster (minikube).
 
 ## Why this exists
 
